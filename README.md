@@ -31,6 +31,10 @@ To get started with the Task Manager, follow these steps:
 7. **Access the Application**: Open your web browser and navigate to `http://localhost:8000`.
 8. **Seed Database (Optional)**: If you want to populate the database with sample data, run `php artisan db:seed --class=TaskSeeder` after registering a user. Note : user_id is set to 1 so the first user to be registered will have this data.
 
+## Feature Testing
+
+1. **Run the PHP Unit testing Command**: `php artisan test`
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
