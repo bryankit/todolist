@@ -23,12 +23,13 @@ The Task Manager is a web application designed to help users manage their tasks 
 To get started with the Task Manager, follow these steps:
 
 1. **Clone the Repository**: `git clone https://github.com/bryankit/todolist.git`
-2. **Install Dependencies**: `composer install`
+2. **Install Dependencies**: `composer install then npm run dev`
 3. **Set Up Environment Variables**: Copy the `.env.example` file to `.env`.
 4. **Run Migrations**: `php artisan migrate`
-5. **Seed Database (Optional)**: If you want to populate the database with sample data, run `php artisan db:seed --class=TaskSeeder`. Note : user_id is set to 1 so the first user to be registered will have this data.
-6. **Serve the Application**: `php artisan serve`
+5. **Serve the Application**: `php artisan serve`
+6. **Start the development server**: `npm run dev`
 7. **Access the Application**: Open your web browser and navigate to `http://localhost:8000`.
+8. **Seed Database (Optional)**: If you want to populate the database with sample data, run `php artisan db:seed --class=TaskSeeder` after registering a user. Note : user_id is set to 1 so the first user to be registered will have this data.
 
 ## Contributing
 

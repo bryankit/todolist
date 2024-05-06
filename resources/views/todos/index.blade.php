@@ -114,10 +114,10 @@
                             <tbody class="bg-white divide-y divide-gray-200">
                                 @foreach ($tasks as $task)
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4 whitespace-wrap">
                                             <div class="text-sm text-gray-900">{{ $task->title }}</div>
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4 whitespace-wrap">
                                             <div class="text-sm text-gray-900">{{ $task->content }}</div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap">
@@ -233,7 +233,7 @@
                     {{ $tasks->appends([
                             'perPage' => $perPage,
                             'status' => $status,
-                            'orderBy' => $orderBy
+                            'orderBy' => $orderBy,
                         ])->links() }}
                 </div>
             </div>
