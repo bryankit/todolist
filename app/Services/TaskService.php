@@ -7,15 +7,13 @@ use App\Library\Utility;
 
 class TaskService
 {
-
-
     /**
      * Display a listing of tasks based on filters and search criteria.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-    public function index($request)
+    public function index($request) : array
     {
         $userId = auth()->user()->id;
 
@@ -53,16 +51,6 @@ class TaskService
     }
 
     /**
-     * Show the form for creating a new task.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function create()
-    {
-        return view('todos.create');
-    }
-
-    /**
      * Store a newly created task in database.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -91,7 +79,7 @@ class TaskService
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-    public function edit($request)
+    public function edit($request) : array
     {
         $userId = auth()->user()->id;
         $tasks = Task::where('user_id', $userId)->where('id', $request->id)->where('delete', false)->first();
